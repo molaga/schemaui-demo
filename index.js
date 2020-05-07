@@ -33,7 +33,11 @@ SchemaUI.registerModel(Image, {
     }
 });
 
-SchemaUI.registerModel(Settings);
+SchemaUI.registerModel(Settings, {
+    delete: false,
+    edit: false,
+    create: false,
+});
 
 app.use(bodyParser.json());
 app.use('/schemaui', SchemaUI.middleware());

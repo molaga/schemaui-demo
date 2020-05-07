@@ -34,9 +34,11 @@ SchemaUI.registerModel(Image, {
 });
 
 SchemaUI.registerModel(Settings, {
-    delete: false,
-    edit: false,
-    create: false,
+    permissions: {
+        delete: false,
+        edit: false,
+        create: false,
+    }
 });
 
 app.use(bodyParser.json());

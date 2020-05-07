@@ -26,6 +26,10 @@ SchemaUI.registerModel(Image, {
         'description': {
             textarea: true
         }
+    },
+    permissions: {
+        delete: false,
+        create: false,
     }
 });
 

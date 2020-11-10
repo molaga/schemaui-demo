@@ -18,6 +18,24 @@ const PostSchema = new mongoose.Schema({
         type: Date,
         required: true,
         default: Date.now
+    },
+    hobbies: [{
+        animal: String,
+        strength: {
+            type: Number,
+            required: true
+        }
+    }],
+    visitors: [{
+        name: String,
+        age: Number
+    }],
+    some: {
+        deep: {
+            nested: {
+                field: [String]
+            }
+        }
     }
 });
 
